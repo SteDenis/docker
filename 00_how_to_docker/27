@@ -1,0 +1,2 @@
+id=$(docker service ps -f "name=engineering-bay.1" --format "{{.ID}}" engineering-bay)
+docker service logs -f $id

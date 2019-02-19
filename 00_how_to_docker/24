@@ -1,0 +1,1 @@
+docker service create --replicas 1 --network overmind -e RABBITMQ_DEFAULT_USER=stdenis -e RABBITMQ_DEFAULT_PASS=123456 -e RABBITMQ_ERLANG_COOKIE=secretkey --name orbital-command rabbitmq
